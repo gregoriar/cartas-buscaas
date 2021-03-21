@@ -235,8 +235,7 @@
                     var sonidofinJuego = document.getElementById("sonidoFinJuego");
                     sonidofinJuego.play();
                 }
-
-		              
+       
                 function f_mostrarCartasSound(){
                     var sonidomostrarCartas = document.getElementById("sonidoMostrarCartas");
                     sonidoMostrarCartas.play();
