@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>EJERCICIO EXAMEN 2 JUEGO DE CARTAS</title>
+        <link rel="stylesheet" type="text/css" href="css/estilos_juegoCartas.css"/>
+        <script type="text/javascript"  src="js/fichero_externo2.js"></script>
+        
+     </head>
+    <body onload="f_colocarRev();"/>
+        <div align="center"> 
+        
+            <h3>ELIGE LA POSICIÓN DONDE SALDRÁ EL AS DE OROS</h3>
+              
+            <button  onclick="f_ayuda();">AYUDA</button>
+                
+            <div id="contadoresDineroJugadas" >
+                     <span>Dinero</span>
+                </div>
+
+               <div>
+
+                    <div id="capa_0" name="cajas" class="enLinea"onclick="f_seleccionJugador(this);"></div>
+                    <div id="capa_1" name="cajas" class="enLinea" onclick="f_seleccionJugador(this);"></div>
+                    <div id="capa_2" name="cajas" class="enLinea" onclick="f_seleccionJugador(this);"></div>
+
+                </div>
+             <!--   </br> -->
+                <div id="CapaAmarillaMsg" style="background-color:yellow;">
+
+                    <span style="margin-left:20px;"  >Posicion 0</span> 
+                    <span style="margin-left:220px;" >Posicion 1</span> 
+                    <span style="margin-left:240px;" >Posicion 2</span>
+                </div>           
+          <!--      <br/> -->
+                   <button id="btnMostrar" name="btnMostrar"  style="visibility:hidden;"  onclick="f_mostrarCartas();">MOSTRAR CARTAS</button> 
+                <button id="btnVolverJugar" name="btnVolverJugar"  style="visibility:hidden;"  onclick="f_volverJugar();">VOLVER A JUGAR</button>  
+                <button id="btnRecargar" name="btnRecargar"  style="visibility:hidden;"  onclick="f_recargarJuego();">RECARGAR</button>  
+                
+                <audio id="sonidoSelecc" controls> 
+                    <source type="audio/wav" src="audios/Pop.mp3">
+                 </audio>
+               
+                 <audio id="sonidoFinJuego" controls> 
+                    <source type="audio/wav" src="audios/finJuego.mp3">
+                 </audio> 
+                
+                <div id="capamsg_Fijo">
+                    <span id="mensajeSeleccion" style="visibility: visible; font-weight:normal;">
+                    SELECCIONA LA POSICIÓN DONDE CREES QUE SALDRÁ EL AS....? </span> 
+                     <img src="imagenes/as.jpg" style="width:40px; height:40px; margin:0px;"/>                    
+                </div>
+               
+                <div id="capa_Mensajes" name="capa_mensajes" style="background-color:lavenderblush;" >
+                    <span id="mensajeSeleccion" style="visibility: visible; font-weight:normal;">
+                    </span> 
+                </div>
+        </div>
+    </body>
+</html>
