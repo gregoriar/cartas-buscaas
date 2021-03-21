@@ -165,6 +165,7 @@
                     }           
       
                  f_mostrarAcumConta();
+		 f_mostrarCartasSound()
                 }
                
             //MUESTRA LOS CONTADORES DE DINERO Y NUMERO DE JUGADAS
