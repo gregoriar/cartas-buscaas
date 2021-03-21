@@ -238,6 +238,6 @@
                 }
        
                 function f_mostrarCartasSound(){
-                    var sonidomostrarCartas = document.getElementById("sonidoMostrarCartas");
+                    var sonidoMostrarCartas = document.getElementById("sonidoMostrarCartas");
                     sonidoMostrarCartas.play();
                 }
