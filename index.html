@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,7 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>EJERCICIO EXAMEN 2 JUEGO DE CARTAS</title>
         <link rel="stylesheet" type="text/css" href="css/estilos_juegoCartas.css"/>
-        <script type="text/javascript"  src="js/fichero_externo2.js"></script>
+        <script type="text/javascript"  src="js/fichero_externo.js"></script>
         
      </head>
     <body onload="f_colocarRev();"/>
@@ -34,16 +35,22 @@
                     <span style="margin-left:240px;" >Posicion 2</span>
                 </div>           
           <!--      <br/> -->
-                   <button id="btnMostrar" name="btnMostrar"  style="visibility:hidden;"  onclick="f_mostrarCartas();">MOSTRAR CARTAS</button> 
+                 
+      <!--      <button id="btnFinBarajar" name="btnFinBarajar" style="visibility:hidden;" onclick="finBarajar();">FIN BARAJAR</button>  -->
+                <button id="btnMostrar" name="btnMostrar"  style="visibility:hidden;"  onclick="f_mostrarCartas();">MOSTRAR CARTAS</button> 
                 <button id="btnVolverJugar" name="btnVolverJugar"  style="visibility:hidden;"  onclick="f_volverJugar();">VOLVER A JUGAR</button>  
                 <button id="btnRecargar" name="btnRecargar"  style="visibility:hidden;"  onclick="f_recargarJuego();">RECARGAR</button>  
                 
-                <audio id="sonidoSelecc" controls> 
+                <audio  controls id="sonidoSelecc" style="display:none"> 
                     <source type="audio/wav" src="audios/Pop.mp3">
                  </audio>
                
-                 <audio id="sonidoFinJuego" controls> 
+                 <audio controls id="sonidoFinJuego"  style="display:none" > 
                     <source type="audio/wav" src="audios/finJuego.mp3">
+                 </audio> 
+                 
+                 <audio controls id="sonidoMostrarCartas"  style="display:none" > 
+                    <source type="audio/wav" src="audios/mostrar_cartas.mp3">
                  </audio> 
                 
                 <div id="capamsg_Fijo">
